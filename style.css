@@ -1,0 +1,186 @@
+body {
+  max-width: 700px;
+  margin: 0 auto;
+  font-family: 'Yandex', Arial;
+  display: grid;
+  grid-template-rows: 1fr 4fr 2fr;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0 5%;
+}
+
+.logo {
+  font-size: 34px;
+}
+
+.logo:first-letter {
+  color: #f00;
+}
+
+.main {
+  padding: 0 5%;
+}
+
+.main__title {
+  font-size: 52px;
+  font-weight: normal;
+  line-height: 1.4em;
+  margin: 0;
+}
+
+.main__subtitle {
+  font-size: 36px;
+  font-weight: normal;
+  margin: 0;
+  padding: 5% 0;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  line-height: 1.4em;
+}
+
+.info__content {
+  flex-basis: 60%;
+  max-width: 60%;
+}
+
+.info__list {
+  margin: 10px 0;
+  padding-left: 15px;
+}
+
+.info__list-item {
+  margin: 5px 0;
+}
+
+.info__organization {
+  flex-basis: 40%;
+  max-width: 40%;
+}
+
+.info__organization-text:nth-child(2) {
+  margin-top: 20px;
+}
+
+.info__first-meeting {
+  margin-top: 20px;
+}
+
+.info__time {
+  font-weight: bold;
+  font-size: 1.4em;
+  margin-left: 5px;
+}
+
+.figures {
+  overflow: hidden;
+  display: flex;
+  height: 100%;
+  position: relative;
+}
+
+.figures__rectangle {
+  width: 200px;
+  height: 100px;
+  background: #ffdb4d;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 25%;
+  left: -10%;
+}
+
+.figures__hexagon {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  transform: rotate(50deg);
+  transform-origin: center;
+  width: 85px;
+  height: 85px;
+}
+
+.hexagon-section {
+  width: 85px;
+  height: 50px;
+  background: #f00;
+  position: absolute;
+}
+
+.hexagon-section:nth-child(2) {
+  transform: rotate(60deg);
+}
+
+.hexagon-section:nth-child(3) {
+  transform: rotate(120deg);
+}
+
+.figures__square {
+  width: 150px;
+  height: 150px;
+  background: #000;
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+}
+
+.figures__triangle {
+  position: absolute;
+  bottom: 166px;
+  transform: rotate(-25deg);
+  left: 35%;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 90px solid #f00;
+}
+
+.figures__circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background: #ffdb4d;
+  position: absolute;
+  bottom: 20px;
+  left: 47%;
+}
+
+.figures__pentagon {
+  position: absolute;
+  width: 64px;
+  border-width: 61px 28px 0;
+  border-style: solid;
+  border-color: #f00 transparent;
+  bottom: 20px;
+  left: 72%;
+  transform: rotate(30deg);
+}
+
+.figures__pentagon:before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -110px;
+  left: -28px;
+  border-width: 0 60px 50px;
+  border-style: solid;
+  border-color: transparent transparent #f00;
+}
+
+.figures__rectangle.small {
+  width: 150px;
+  height: 50px;
+  left: auto;
+  right: -10%;
+  top: auto;
+  bottom: 50px;
+  transform: rotate(30deg);
+}
